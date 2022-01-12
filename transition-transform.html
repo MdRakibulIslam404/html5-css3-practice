@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition transform</title>
+    <style>
+        .field {
+            border: 2px solid red;
+            height: 500px;
+            width: 500px;
+        }
+
+        #boy {
+            transition: transform 2s ease 3.8s;
+            position: relative;
+            z-index: 3;
+
+        }
+
+        .field:hover #boy {
+            transform: translate(185px, 355px);
+        }
+
+        #ring {
+            transition: transform 2s ease 1.9s;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .field:hover #ring {
+            transform: translate(185px, 280px);
+        }
+
+        #water {
+            transition: transform 2s ease 0.1s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .field:hover #water {
+            transform: translate(175px, 185px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <div id="boy"><img src="images/svg/boy.svg" alt=""></div>
+        <div id="ring"><img src="images/svg/ring.svg" alt=""></div>
+        <div id="water"><img src="images/svg/water.svg" alt=""></div>
+    </div>
+</body>
+
+</html>
